@@ -1,0 +1,169 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: tell_name
+  examples: |
+    - what is your name?
+    - what others call you
+    - what should i call you
+
+- intent: username
+  examples: |
+    - my username is [jaya]{"entity":"uname", "value":"jaya"}
+    - my uname is [mugdha]{"entity":"uname", "value":"mugdha"}
+    - my username is [prachi]{"entity":"uname", "value":"prachi"}
+    - [jaya]{"entity":"uname", "value":"jaya"}
+
+- intent: password
+  examples: |
+    - my password is [7743803718]{"entity":"passwd"}
+    - [7743803718]{"entity":"passwd"}
+
+- intent: academics
+  examples: |
+    - I want academinc information
+    - about academics
+    - academics
+
+- intent: admissiondetails
+  examples: |
+    - admisssion details
+    - first
+
+- intent: SST
+  examples: |
+    - student section
+    - transaction
+    - student section transaction
+    - second
+
+- intent: student_info
+  examples: |
+    - general info
+    - information
+
+- intent: student_details
+  examples: |
+    - details
+    - detail info
+
+- intent: courseregistration
+  examples: |
+    - course registration
+    - 1
+    - first
+
+- intent: studentfeedback
+  examples: |
+    - student feedback
+    - student feedback form
+    - 2
+    - second
+
+- intent: admissionpayment
+  examples: |
+    - admission payment
+    - admission payment
+    - 3
+    - third option
+    - third
+
+
+
+
+
+
+
+
+
+

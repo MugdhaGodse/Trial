@@ -1,0 +1,62 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_choices
+
+- story: academics path
+  steps:
+  - intent: academics
+  - action: utter_login
+  - action: user_details_form
+  - active_loop: user_details_form
+
+- story: admission choices
+  steps:
+  - intent: admissiondetails
+  - action: utter_admissionchoices
+
+- story: students details
+  steps:
+  - intent: student_details
+  - action: action_StudentDetails
+
+- story: students information
+  steps:
+  - intent: student_info
+  - action: action_Getthelink
+
+- story: SST choices
+  steps:
+    - intent: SST
+    - action: utter_sstchoices
+
+- story: admission payment
+  steps:
+    - intent: admissionpayment
+    - action: utter_sstchoices
+
+- story: course registration
+  steps:
+    - intent: courseregistration
+    - action: utter_sstchoices
+
+- story: student feedback
+  steps:
+    - intent: studentfeedback
+    - action: utter_sstchoices
+
+
+
+
+
+
+
+
+
+
+
