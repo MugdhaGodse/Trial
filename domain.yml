@@ -1,0 +1,116 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - tell_name
+  - username:
+      use_entities:
+        - uname
+  - password:
+      use_entities:
+        - passwd
+
+entities:
+  - uname
+  - passwd
+
+slots:
+  uname:
+    type: text
+  passwd:
+    type: text
+
+
+forms:
+  user_details_form:
+    uname:
+      - type: from_text
+        entity: uname
+    passwd:
+      - type: from_text
+        entity: passwd
+
+
+responses:
+  utter_greet:
+  - text: "Hey! hi there"
+
+  utter_greetagain:
+  - text : "Welcome back ! Successfully logged in!"
+
+  utter_choices:
+    - text: "Hey! How may I help you?"
+      buttons:
+        - title: "Academics"
+          payload: "/academics"
+        - title: "Training and Placement"
+          payload: '/Training and Placement'
+        - title: "Examination"
+          payload: '/examination'
+        - title: "Library"
+          payload: '/library'
+
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_ask_uname:
+  - text: "what is your username"
+
+  utter_ask_passwd:
+  - text: "what is your password"
+
+  utter_thanks:
+  - text: "thank you"
+
+  utter_name:
+  - text: "my name is innovate yourself."
+
+  utter_details_thanks:
+  - text: "Thanks for providing the given details \nName: {UserName},\nPassword: {Password}"
+
+  utter_message:
+  - text: "Ok ! let me check for validity"
+
+  utter_login:
+  - text: "Please login for this facility !"
+
+  utter_academicchoices:
+  - text: "Would You like to see admission details or student section transaction details ?"
+
+  utter_admissionchoices:
+  - text: " Do you want to see your general information or get your details ?"
+
+  utter_sstchoices:
+  - text: "Where do want to go further ? 1. Course Registration 2. Student feedback form  3. Admission?payment"
+
+
+
+actions:
+  - action_submit
+  - action_fetch
+  - action_StudentDetails
+  - action_Getthelink
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
